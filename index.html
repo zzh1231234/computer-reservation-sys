@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>涉密电脑预约系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>涉密电脑预约系统</h1>
+        <form id="reservationForm">
+            <label for="computer">选择电脑:</label>
+            <select id="computer">
+                <option value="1(广联达)">1(广联达)</option>
+                <option value="2(广联达)">2(广联达)</option>
+                <option value="3(广联达)">3(广联达)</option>
+                <option value="4(广联达)">4(广联达)</option>
+                <option value="电脑5">电脑5</option>
+                <option value="电脑6">电脑6</option>
+                <option value="电脑7">电脑7</option>
+                <option value="电脑8">电脑8</option>
+                <option value="电脑9">电脑9</option>
+            </select>
+
+            <label for="date">选择日期:</label>
+            <input type="date" id="date">
+
+            <label for="time">选择时间:</label>
+            <select id="time">
+                <option value="上午">上午</option>
+                <option value="下午">下午</option>
+                <option value="全天">全天</option>
+            </select>
+
+            <label for="projectNumber">项目编号:</label>
+            <input type="text" id="projectNumber">
+
+            <label for="reviewer">评审人员:</label>
+            <input type="text" id="reviewer">
+
+            <label for="supervisor">项目主管:</label>
+            <input type="text" id="supervisor">
+
+            <button type="submit">提交预约</button>
+        </form>
+
+        <h2>已预约列表</h2>
+        <ul id="reservationsList"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
